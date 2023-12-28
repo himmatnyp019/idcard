@@ -8,11 +8,14 @@
     flex-direction: column-reverse;
     gap: 50px;
   }
+  .message{
+    width: 70%;
+  }
 
   /* --------text-contents- */
   .text-content{
     width: 100%;
-
+    padding-bottom: 50px;
 
   }
 
@@ -38,7 +41,9 @@
     .box{
         height: 500px;
     }
-    
+    .message{
+        width: 80%;
+    }
 }
 
 
@@ -48,7 +53,9 @@
     .box{
         height: 400px;
     }
-
+   .message{
+    padding: 10px;
+   }
 
 
     /* -------text-contents---- */
@@ -108,7 +115,7 @@
 
     .key-btn a{
         width: fit-content;     
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         padding: 3px 10px;
         border: 2px solid #ff004f;
