@@ -1,0 +1,156 @@
+body{
+    padding: 0;margin: 0;
+    background: #0f0f0f;
+	color:white;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+::selection{
+	background-color: white;
+	color: black;
+}
+
+
+
+.container{
+    height: 100vh;
+    padding: 20px;
+}
+
+
+
+/* -------top-layout------- */
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/* ------------------text-contents----------- */
+.text-content{
+    width: auto;
+    height: fit-content;
+	background: transparent;
+}
+.text-content h1{
+    font-weight: 900;
+    height: 105px;
+    font-size: 5rem;
+    margin: 0;
+}
+.text-content h4{
+    font-weight: 900;
+	font-size: 3rem;
+	margin: 0;
+}
+.text-content h3{
+    font-weight: 900;
+	font-size: 3rem;
+	margin: 0;
+	color: #ff004f;
+	margin-left: 5px;
+}
+
+/* ---------social links and buttons ---------- */
+.social-links{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	
+  }
+  .buttons{
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content:left;
+	align-items: left;
+	margin: 20px 0;
+	padding: 0;
+  
+  }
+  .buttons .icon{
+	height: 40px;
+	width: 40px;
+	background: transparent;
+	border: 4px solid #ff004f;
+	border-radius: 50px;
+	margin: 5px 14px;
+	color:#ff004f ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px;
+	padding: 0;
+	transform: scale(1);
+	transition: .4s ease-out;
+	cursor: pointer;
+
+ }
+ .icon:hover{
+	color: white;
+	background: var(--text-span-color);
+	transform: scale(1.3);
+	
+ }
+ .social-links a{
+    width: fit-content;
+	text-decoration:none ;
+	font-size: 20px;
+	margin: 0 7px;
+	font-weight: 500;
+	text-align: center;
+	color: #ff004f;
+	cursor: pointer;
+	padding: 5px 20px;
+	border: 2px solid #ff004f;
+	border-radius: 50px;
+	background: transparent;
+	transition: all .4s ease-in;
+	box-shadow: 0 0px 5px 5px rgba(46, 46, 46, 0);
+	
+
+ }
+ .key-btn{
+	width: max-content;
+	padding: 0;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+ }
+ .key-btn a:nth-child(2){
+	background: #ff004f;
+	box-shadow: 0 0px 5px 5px rgba(46, 46, 46, 0);
+	color: #fff;
+ }
+ .key-btn a:hover{
+	background: #ff004f;
+	color: #fff;
+	box-shadow: 0 0px 100px 16px rgb(255, 0, 79, 0.7);
+ }
+ 
+
+
+ /* -------------image-contents-------- */
+ .image-content{
+    background: transparent;
+    
+ }
+ .box{
+    background: url(Resources/MainImage.png);
+    /* --webkit-background-size:cover ; */
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+    box-shadow: 0 20px 5px 5px rgba(83, 83, 83, 0.2);   
+    
+}
