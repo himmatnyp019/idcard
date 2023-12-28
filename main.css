@@ -1,5 +1,6 @@
 body{
-    padding: 0;margin: 0;
+   margin: 0;
+   padding: 0;
     background: #0f0f0f;
 	color:white;
     box-sizing: border-box;
@@ -39,6 +40,7 @@ html{
     width: auto;
     height: fit-content;
 	background: transparent;
+	
 }
 .text-content h1{
     font-weight: 900;
@@ -100,7 +102,7 @@ html{
 	transform: scale(1.3);
 	
  }
- .social-links a{
+ .social-links a {
     width: fit-content;
 	text-decoration:none ;
 	font-size: 20px;
@@ -126,6 +128,38 @@ html{
 	justify-content: center;
 	align-items: center;
  }
+.email, .phone{
+	width: fit-content;
+	font-size: 20px;
+	margin: 10px 7px;
+	margin-top: 20px;
+	font-weight: 500;
+	text-align: center;
+	color: #ff004f;
+	cursor: pointer;
+	border: 2px solid #ff004f;
+	border-radius: 5px;
+	background: transparent;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-self: space-between;
+	transition: all .4s ease-in;
+	box-shadow: 0 0px 5px 5px rgba(46, 46, 46, 0);
+}
+.email p, .phone p{
+	margin: 3px 5px;
+}
+.email i, .phone i{
+	background: #ff004f;
+	color: white;
+	font-size: 16px;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
  .key-btn a:nth-child(2){
 	background: #ff004f;
 	box-shadow: 0 0px 5px 5px rgba(46, 46, 46, 0);
@@ -153,4 +187,83 @@ html{
     width: 500px;
     box-shadow: 0 20px 5px 5px rgba(83, 83, 83, 0.2);   
     
+}
+
+
+ /* ------------message -------  */
+ 
+.message{
+	width: 45%;
+	height: fit-content;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 2;
+	background: #fff;
+	border-radius: 20px;
+	padding: 20px 30px;
+	margin-left: 5px;
+}
+.message h1{
+	margin: 0px 10px;
+	color: #ff004f;
+	font-size: 2rem;
+}
+.message p{
+	width: 80%;
+	margin: 0px 10px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #383838;
+}
+.name , .phone, .text{
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	
+}
+.text h5, .name h5, .phone h5{
+	margin: 10px;
+	font-size: 16px;
+	color: #383838;
+}
+input, textarea{
+	padding: 15px 10px;
+	border: 4px solid #747474;
+	border-radius: 10px ;
+	outline: none;
+    resize: none;
+	font-size: 18px;
+}
+#date{
+	display: block;
+}
+input:focus, textarea:focus{
+	border: 4px solid #ff004f;
+	box-shadow: 0 0px 10px 6px rgb(255, 0, 79, 0.3);
+	
+}
+#submit{
+	width: 100%;
+	background: #ff004f;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 18px;
+	padding: 15px ;
+	font-weight: bold;
+	margin: 10px 0;
+	text-transform: uppercase;
+	text-align: center;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+#close{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+	font-size: 3rem;
+	font-weight: 600;
 }
